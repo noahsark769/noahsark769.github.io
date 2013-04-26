@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>{% if page.title %} {{ page.title }} | {% endif %} Noah Gilmore</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="{{site.url}}css/reset.css">
+	<link rel="stylesheet" type="text/css" href="{{site.url}}css/styles.css">
+	<link rel="stylesheet" type="text/css" href="{{site.url}}css/elusive/elusive-webfont.css">
+	<!--[if lte IE 7] -->
+	<link rel="stylesheet" type="text/css" href="{{site.url}}css/elusive/elusive-webfont-ie7.css">
+	<!--[endif] -->
+</head>
+<body>
+	<div class="container">
+		<div class="header-container">
+			<div class="header">
+
+				<div class="banners">
+					<div class="banner twitter"><a href='http://twitter.com/noahsark769'>
+						<div class="icon">
+							<i class='icon-twitter'></i>
+						</div></a>
+					</div><div class="banner github"><a href='http://github.com/noahsark769'>
+						<div class="icon">
+							<i class='icon-github'></i>
+						</div></a>
+					</div><div class="banner dribbble"><a href='http://dribbble.com/noahsark769'>
+						<div class="icon">
+							<i class='icon-dribble'></i>
+						</div></a>
+					</div><div class="banner email"><a href='mailto:noah.w.gilmore@gmail.com'>
+						<div class="icon">
+							<i class='icon-envelope'></i>
+						</div></a>
+					</div>
+				</div>
+				
+				<div class="nav">
+					<ul>
+						<li class="about"><a href="http://noahgilmore.com">About</a></li>
+						<li class="projects"><a href="http://noahgilmore.com">Projects</a></li>
+						<li class="projects"><a href="http://noahgilmore.com">Resume</a></li>
+						<li class="projects"><a href="http://noahgilmore.com">Hire</a></li>
+						<li class="projects"><a href="http://noahgilmore.com">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="title">Noah Gilmore - Blog</div>
+				<div class="subtitle">Thoughts on web/software/graphic/ui design and development.</div>
+			</div>
+			<div class="header-image">
+				<img class="circular" src='{{site.url}}img/twitter-profile-pic.jpg'/>
+			</div>
+		</div>
+
+		{{ content }}
+	</div>
+
+</body>
+</html>
