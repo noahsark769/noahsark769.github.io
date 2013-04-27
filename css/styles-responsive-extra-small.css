@@ -1,7 +1,7 @@
-.banner.home {
+.banners .banner.home {
   display: inline-block;
 }
-.banner.email {
+.banners .banner.email {
   display: none;
 }
 .nav {
