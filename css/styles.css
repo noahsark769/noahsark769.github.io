@@ -4,6 +4,9 @@ body {
   height: 100%;
   background-color: #efedd6;
 }
+a {
+  text-decoration: none;
+}
 .container {
   width: 100%;
   max-width: 900px;

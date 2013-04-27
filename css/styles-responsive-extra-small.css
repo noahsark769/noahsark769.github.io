@@ -1,10 +1,7 @@
-.banners .banner {
-  margin-right: 10px;
-}
-.banners .banner.home {
+.banner.home {
   display: inline-block;
 }
-.banners .banner.email {
+.banner.email {
   display: none;
 }
 .nav {
