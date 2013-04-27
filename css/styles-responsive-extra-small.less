@@ -1,0 +1,42 @@
+// these will be applied approaching iphone portriat width
+
+// less space between the banners
+.banners {
+	.banner {
+		margin-right: 10px;
+
+		// show link to main page
+		&.home {
+			display: inline-block;
+		}
+		&.email {
+			display: none;
+		}
+	}
+}
+
+// don't show the nav links at all (at the top)
+.nav {
+	display: none;
+}
+
+//add a little more break between paragraphs so that it's easier to see
+p {
+	margin-bottom: 20px;
+}
+
+//add a cute little marker at the top of posts
+.post {
+	position: relative;
+}
+
+.post:after {
+	content: "post";
+	display: block;
+
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+	color: rgba(0, 0, 0, .5);
+}

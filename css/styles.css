@@ -92,6 +92,9 @@ body {
 .banners .banner:last-of-type {
   margin-right: 0;
 }
+.banners .banner.home {
+  display: none;
+}
 .banners .banner .icon {
   position: absolute;
   bottom: 8px;

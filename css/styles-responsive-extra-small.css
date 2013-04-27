@@ -1,0 +1,26 @@
+.banners .banner {
+  margin-right: 10px;
+}
+.banners .banner.home {
+  display: inline-block;
+}
+.banners .banner.email {
+  display: none;
+}
+.nav {
+  display: none;
+}
+p {
+  margin-bottom: 20px;
+}
+.post {
+  position: relative;
+}
+.post:after {
+  content: "post";
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}

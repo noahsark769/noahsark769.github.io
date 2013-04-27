@@ -1,0 +1,33 @@
+// when the screen is less than 900px, these will be applied
+
+//don't display the header image at all
+.header-image {
+	display: none;
+}
+
+// make the content responsive and give it a nice padding
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+// make the header centered
+.header {
+	width: 90%;
+	margin: 0 auto;
+}
+
+// make the post take up the whole screen, but look good doing it
+.post {
+	width: 90%;
+	margin: 0 0 40px 0;
+	padding: 30px 5% 20px 5%;
+
+	.post-content {
+		padding: 0;
+	}
+
+	.post-content, .post-title, .post-date {
+		text-align: left;
+	}
+}

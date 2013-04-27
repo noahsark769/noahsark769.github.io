@@ -1,0 +1,24 @@
+.header-image {
+  display: none;
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
+.header {
+  width: 90%;
+  margin: 0 auto;
+}
+.post {
+  width: 90%;
+  margin: 0 0 40px 0;
+  padding: 30px 5% 20px 5%;
+}
+.post .post-content {
+  padding: 0;
+}
+.post .post-content,
+.post .post-title,
+.post .post-date {
+  text-align: left;
+}
