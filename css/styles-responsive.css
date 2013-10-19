@@ -5,6 +5,9 @@
   width: 100%;
   text-align: center;
 }
+h1 {
+  width: 100%;
+}
 .header {
   width: 90%;
   margin: 0 auto;
@@ -21,4 +24,15 @@
 .post .post-title,
 .post .post-date {
   text-align: left;
+}
+.post h1,
+.post pre {
+  margin-left: 0;
+}
+.post h1 {
+  width: 100%;
+}
+.post pre {
+  width: 98%;
+  padding-left: 2%;
 }

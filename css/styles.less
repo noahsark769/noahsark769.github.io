@@ -6,6 +6,11 @@
 @darkblue: #108a57;
 @other-green: #d1ce7d;
 @other: #eae8b9;
+
+@code-background: #002B36;
+@code-background-transparent: rgba(0,43,54, 0.7);
+@code-color: #93A1A1;
+
 @banner-width: 50px;
 @banner-height: 135px;
 @banner-margin: 30px;
@@ -182,6 +187,7 @@ a {
 @post-padding: 20px;
 @post-title-height: 30px;
 @post-date-height: 15px;
+@post-content-padding: 40px;
 
 .post {
 	display: block;
@@ -210,20 +216,33 @@ a {
 	}
 
 	.post-content {
-		padding: 0 40px;
+		padding: 0 @post-content-padding;
 	}
 }
 
 // post styles
+
+@post-margin-distance: @post-padding + @post-content-padding;
 p {
 	margin-bottom: 10px;
 	line-height: 22px;
 	font-size: 18px;
 }
 h1 {
-	margin-top: 5px;
-	font-size: 2em;
+	display: block;
+	margin-top: 35px;
 	margin-bottom: 10px;
+
+	padding-left: 10px;
+
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	width: (@container-width / 4) + @post-margin-distance;
+
+	background-color: @code-background;
+	color: white;
+	margin-left: -@post-margin-distance;
 }
 h2 {
 	margin-top: 5px;
@@ -232,8 +251,38 @@ h2 {
 }
 code {
 	font-family: monospace;
-	font-size: 0.8em;
-	background-color: #aaa;
-	.rounded-corners(2px);
-	padding: 0 3px;
+	font-size: 14px;
+	background-color: lighten(@code-background, 10%);
+	color: lighten(@code-color, 10%);
+	padding: 3px 5px;
+	line-height: 15px;
+}
+
+@code-block-padding: 15px;
+pre {
+	display: block;
+	padding: 10px @code-block-padding;
+	background-color: @code-background;
+	color: @code-color;
+	margin-left: -@post-margin-distance;
+	padding-left: @post-margin-distance + @code-block-padding;
+	width: @container-width - (@post-margin-distance + 2 * @code-block-padding);
+
+	margin-bottom: 10px;
+
+	code {
+		line-height: 17px;
+		font-size: 13px;
+		padding: 0;
+		background: none;
+	}
+}
+
+a, a:visited {
+	text-decoration: underline;
+	color: lighten(@code-background, 10%);
+}
+
+a:hover {
+	color: lighten(@code-background, 20%);
 }

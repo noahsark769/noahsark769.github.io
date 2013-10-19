@@ -11,6 +11,11 @@
 	text-align: center;
 }
 
+// make sure the headers don't overflow :(
+h1 {
+	width: 100%;
+}
+
 // make the header centered
 .header {
 	width: 90%;
@@ -29,5 +34,18 @@
 
 	.post-content, .post-title, .post-date {
 		text-align: left;
+	}
+
+	// get rid of all this tricky negative margin stuff:
+	h1, pre {
+		margin-left: 0;
+	}
+	h1 {
+		width: 100%;
+	}
+
+	pre {
+		width: 98%;
+		padding-left: 2%;
 	}
 }
