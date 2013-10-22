@@ -2,6 +2,7 @@
 layout: post
 title: How to make your first website (really)
 user_date: July 29th, 2013
+truncate_length: 600
 ---
 Recently, I've been getting multiple emails from people (usually fellow students) who appreciate some of the work that I've done (and some of the work that I've collaborated with others on). Invariably these guys want to get into web development themselves, and they ask me a few questions:
 

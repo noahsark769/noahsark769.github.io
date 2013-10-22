@@ -3,17 +3,22 @@ layout: default
 title: Blog
 ---
 
+{% contentfor js %}
+<script type="text/javascript" src="{{site.url}}js/jquery.js"></script>
+<script type="text/javascript" src="{{site.url}}js/seemore.js"></script>
+{% endcontentfor %}
+
 {% for post in site.posts %}
 <div class="post">
 	<div class="post-title">
-		{{post.title}}
+		<a href="{{site.url}}{{post.url}}">{{post.title}}</a>
 	</div>
 	<div class="post-date">
 		{{post.user_date}}
 	</div>
 
 	<div class="post-content">
-		{{post.content}}
+		{{post.content|truncatewords:100}} <a href="{{site.url}}{{post.url}}">(read on)</a>
 	</div>
 </div>
 {% endfor %}

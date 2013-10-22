@@ -186,7 +186,7 @@ a {
 
 @post-padding: 20px;
 @post-title-height: 30px;
-@post-date-height: 15px;
+@post-date-height: 25px;
 @post-content-padding: 40px;
 
 .post {
@@ -204,15 +204,27 @@ a {
 	.rounded-corners(5px);
 
 	.post-title {
+		&:hover {
+			color: lighten(black, 10%);
+		}
+		a {
+			text-decoration: none;
+		}
 		line-height: @post-title-height;
 		font-size: @post-title-height - 2px;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
 	}
 
 	.post-date {
 		line-height: @post-date-height;
-		font-size: @post-date-height - 2px;
+		font-size: @post-date-height - 10px;
 		margin-bottom: 20px;
+		background-color: @code-background;
+		color: white;
+
+		margin-left: -@post-padding;
+		width: @container-width - @post-padding;
+		padding-left: @post-padding;
 	}
 
 	.post-content {

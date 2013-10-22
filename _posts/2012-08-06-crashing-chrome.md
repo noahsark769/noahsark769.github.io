@@ -2,6 +2,7 @@
 layout: post
 title: Crashing Chrome
 user_date: October 6th, 2012
+truncate_length: 500
 ---
 While developing [Berkeleytime](http://berkeleytime.com), a project I'm working on to help UC Berkeley students browse courses and plan their schedule effectively, we ran into one of the most interesting bugs I've ever encountered. The page would load, but the password field on the login form would occasionally stop working - when you removed all the text from the password field Chrome would slow to a halt and crash.
 
